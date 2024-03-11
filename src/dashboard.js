@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-
+import Image from './img/arrow.svg';
+import Mem from './img/mem.svg';
 const Dashboard = ({ onViewDashboard }) => {
   return (
     <>
@@ -9,94 +10,73 @@ const Dashboard = ({ onViewDashboard }) => {
     </header>
     <div className="container1">
         <div className="left-box">
-            <div className="username">
-              USER NAME
+          <div className="teambox">
+            <div className="teamnamebox">
+              <h1>Team Name</h1>
             </div>
-            <div className="memdetails">
-            <div className="userdetail">
-                Team Name
+            <div className="teamdetailbox">
+              <div className="teammembox1 teammembox">
+                <div className="logo">
+                  <img src={Mem}></img>
+                </div>
+                <div className="teammemdetail">
+                  <h1>Name</h1>
+                  <h2>XXABCXXXX</h2>
+                </div>
               </div>
-              <div className="userval">
-                Name of team
+              <div className="teammembox">
+                <div className="logo">
+                  <img src={Mem}></img>
+                </div>
+                <div className="teammemdetail">
+                  <h1>Name</h1>
+                  <h2>XXABCXXXX</h2>
+                </div>
               </div>
-              <div className="userdetail">
-                Track
+              <div className="teammembox">
+                <div className="logo">
+                  <img src={Mem}></img>
+                </div>
+                <div className="teammemdetail">
+                  <h1>Name</h1>
+                  <h2>XXABCXXXX</h2>
+                </div>
               </div>
-              <div className="userval">
-                FinTech
-              </div>
-              <div className="userdetail">
-                Registration Number
-              </div>
-              <div className="userval">
-                23BCEXXXX
-              </div>
-              <div className="userdetail">
-                Phone Number
-              </div>
-              <div className="userval">
-                9999XXXXXX
-              </div>
-              <div className="userdetail">
-                Email-ID
-              </div>
-              <div className="userval">
-                lorem.ipsum2023@vitstudent.ac.in
+              <div className="teammembox2 teammembox">
+                <div className="logo">
+                  <img src={Mem}></img>
+                </div>
+                <div className="teammemdetail">
+                  <h1>Name</h1>
+                  <h2>XXABCXXXX</h2>
+                </div>
               </div>
             </div>
-            <div className="teamlink">
-                View Team Details
-            </div>
-            <button className="logoutbtn">LOGOUT</button>
+          </div>
         </div>
         <div className="right-box">
           <div className="reviewrect">
             <div>
-              <h1 className="reviewtxt">REVIEWS</h1>
+              <h1 className="reviewtxt">Reviews</h1>
+              <h2 className="reviewtime">Time until review 2: HH:MM:SS</h2>
             </div>
-            <div>
-              <table className="review-table">
-                <thead>
-                  <tr>
-                    <th>Review</th>
-                    <th>Judging Criteria</th>
-                    <th>Time</th>
-                    <th> </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Review 1</td>
-                    <td>Judging Criteria</td>
-                    <td>Time</td>
-                    <td>
-                      <button className="button4" type="submit" onClick={onViewDashboard}>
-                        SUBMIT
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Review 2</td>
-                    <td>Judging Criteria</td>
-                    <td>Time</td>
-                    <td>
-                      <button className="button4" type="submit" onClick={onViewDashboard}>
-                        SUBMIT
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Review 3</td>
-                    <td>Judging Criteria</td>
-                    <td>Time</td>
-                    <td>
-                      <button className="button4" type="submit" onClick={onViewDashboard}>
-                        SUBMIT
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="reviewrect2">
+              <div className='reviewdesc'>
+                <h1>Review 1</h1>
+                <h2>12:00am - 3:00pm</h2>
+                <h3>Judging Criteria</h3>
+                <h4>
+                <ul className="list">
+                    <li>Criteria 1</li>
+                    <li>Criteria 2</li>
+                    <li>Criteria 3</li>
+                    <li>Criteria 4</li>
+                  </ul>
+                </h4>
+              </div>
+              <div className='arrow'>
+                <img src={Image}></img>
+              </div>
             </div>
           </div>
         </div>
