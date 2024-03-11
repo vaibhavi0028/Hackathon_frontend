@@ -65,51 +65,191 @@ header{
     flex-shrink: 0;
     border-radius: 50px;
     max-width: 900px;
-    border: 2px solid #FFF;
-    background: rgba(0, 22, 53, 0.05);
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    padding: 5vh 2vw;
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    background: linear-gradient(86deg, rgba(255, 255, 255, 0.05) 11.14%, rgba(255, 255, 255, 0.03) 113.29%);
+    box-shadow: 0px 1.197px 29.915px 0px rgba(14, 36, 113, 0.02);
+    backdrop-filter: blur(35px);
+}
+
+.reviewrect2 {
+    width: 40vw;
+    height: auto;
+    margin: 8vh auto 5vh auto;
+    flex-shrink: 0;
+    border-radius: 50px;
+    max-width: 900px;
     position: relative;
     text-align: center;
     color: white;
     overflow: hidden;
     padding: 4vh 2vw;
-    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1.5px solid #FFF;
+    background: linear-gradient(102deg, rgba(255, 255, 255, 0.18) 0.11%, rgba(255, 255, 255, 0.17) 99.89%);
+    box-shadow: 0px 1.197px 29.915px 0px rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(8.899999618530273px);
+}
+
+.reviewrect2:hover{
+    background: linear-gradient(102deg, rgba(255, 255, 255, 0.349) 0.11%, rgba(255, 255, 255, 0.296) 99.89%);
+    cursor:pointer;
+}
+
+.reviewdesc{
+    text-align: left;
+    margin-left: 1vw;
+}
+
+.reviewdesc h1{
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 0.3;
+    letter-spacing: -1.024px;
+}
+.reviewdesc h2{
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0.7;
+    letter-spacing: -0.316px;
+    margin-bottom: 20%;
+}
+.reviewdesc h3{
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.3;
+    letter-spacing: -0.432px;
+}
+.reviewdesc h4{
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.346px;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+    margin-left: 0; 
+    transition: margin-left 0.5s ease;
+}
+.arrow img{
+    height:8vh;
 }
 .container1 {
     display: flex;
 }
-  
 .left-box {
-    width: 25%; 
-    height:100vh;
-    opacity: 0.75;
-    background: rgba(0, 22, 53, 0.90);
-    backdrop-filter: blur(10px);
-    padding: 0vw 4vw;
-    overflow-x: auto;
-    z-index: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.username {
-    color: #FFF;
-    text-align: center;
-    font-family: Michroma-Regular, sans-serif;
-    font-size: 5.5vh;
-    font-weight: 700;
-    margin: 14vh auto 7vh auto;
+.teambox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto 3vw;
 }
-.userdetail {
-    color: #FFF;
-    text-align: left;
-    font-family: Poppins, sans-serif;
-    font-size: 2.9vh;
-    font-weight: bolder;
+.teamnamebox {
+    display: flex;
+    justify-content: center;
+    height:auto;
+    width:28vw;
+    border-radius: 20px;
+    border: 2px solid var(--main-card-border, rgba(255, 255, 255, 0.20));
+    background: rgba(114, 114, 114, 0.20);
+    box-shadow: 14px 16px 21px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    margin-bottom: 5%;
 }
-.userval {
+.teamdetailbox {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    width: 28vw;
+    border-radius: 20px;
+    padding:10% auto;
+    border: 2px solid var(--main-card-border, rgba(255, 255, 255, 0.20));
+    background: rgba(114, 114, 114, 0.20);
+    box-shadow: 14px 16px 21px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+}
+.teamnamebox h1{
     color: #FFF;
-    text-align: left;
-    font-family: Poppins, sans-serif;
-    font-size: 2.5vh;
-    font-weight:lighter;
-    margin-bottom:2vh;
+    font-family: Michroma-Regular;
+    font-size: 280%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.5;
+    letter-spacing: 0.8px;
+}
+.teammembox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height:auto;
+    width:80%;
+    color:white;
+    margin: 2% auto;
+    border-radius: 80px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 0px 17.4px 6px rgba(0, 0, 0, 0.25) inset, 33.6px 38.4px 50.4px 0px rgba(38, 38, 38, 0.15);
+}
+.teammembox1{
+    margin-top:4%;
+}
+.teammembox2{
+    margin-bottom:4%;
+}
+.logo{
+    display:flex;
+    justify-items: flex-start;
+    align-items: center;
+    margin-right:10%;
+}
+.logo img{
+    height: 5vh;
+}
+.teammembox h1{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.5;
+    letter-spacing: 0.64px;
+}
+.teammembox h2{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0.5;
+    letter-spacing: 0.64px;
 }
 .teamlink {
     color: #0076B3;
@@ -128,6 +268,7 @@ header{
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
+    
   }
   
 .review-table {
@@ -396,10 +537,19 @@ header{
 .reviewtxt {
     color: #FFF;
     font-family: Michroma-Regular, sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 0.3;
+    letter-spacing: 1.28px;
+}
+.reviewtime{
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 250;
+    letter-spacing: 0.6;
 }
 .join-text {
     color: #FFF;
@@ -986,26 +1136,7 @@ input::placeholder {
     align-items: center;
     justify-content: center;
 }
-.logoutbtn {
-    background-color: #27A5EF;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.3vw;
-    cursor: pointer;
-    width: 10.6vw;
-    height: 5.5vh;
-    flex-shrink: 0;
-    margin: 5vh auto 5vh auto; 
-    font-family: 'Baloo Da',sans-serif; 
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center; 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-} 
+
 .button2 {
     background-color: #fff;
     color: #27A5EF;
@@ -1072,16 +1203,7 @@ button:hover {
         max-width: 250px; 
         margin: 2vh auto 3vh auto; 
     }
-    .logoutbtn {
-        font-size: 2.5vh; 
-        width: 45%; 
-        max-width: 250px; 
-        margin: 2vh auto 3vh auto; 
-    }
-    .left-box{
-        display:none;
-    }
-    
+   
     .submitbtn {
         font-size: 2.5vh; 
         width: 60%; 
@@ -1213,24 +1335,82 @@ button:hover {
     }
     .reviewrect {
         width: 87vw;
-        margin: 15vh auto 5vh auto;
+        margin: 5vh auto 5vh auto;
         overflow: auto;
         padding: 4vh 2vw;
+    }
+    .reviewrect2 {
+        overflow: auto;
+        width: 75vw;
+        margin: 5vh auto 5vh auto;
+        padding: 5vh 4vw;
     }
     .reviewtxt {
         font-size: 5vh;
     }
-    .review-table {
-        width: 80%;
-        margin: 7vh auto 5vh auto;
+    .teamnamebox{
+        width: 87vw;
+        height:auto;
+        margin: 10vh auto 2vh auto;
+        padding: 1.8vh 0vw;
     }
-    .review-table td {
-        padding: 2px;
-        font-size: 4vw;
+    .teamnamebox h1{
+        font-size:3.4vh;
     }
-    .review-table th {
-        padding: 8px;
-        font-size: 5vw;
+    .teamdetailbox{
+        width: 87vw;
+        padding: auto 4vw;
+        margin: 1vh auto 5vh auto;
+        flex-wrap: wrap;
+        flex-direction: initial;
+    }
+    
+    .teammembox{
+        width:47%;
+        margin:1% auto;
+    }
+    .teammembox1{
+        margin-top:1%;
+    }
+    .teammembox1{
+        margin-bottom:1%;
+    }
+    .teammemdetail{
+        overflow: auto;
+    }
+    .teammembox h1{
+        font-size: 2vh;
+    }
+    .teammembox h2{
+        font-size: 2vh;
+    }
+    .reviewdesc h1{
+        font-size: 4vh;
+    }
+    .reviewdesc h2{
+        font-size: 3vh;
+    }
+    .reviewdesc h3{
+        font-size: 2.5vh;
+    }
+    .reviewdesc h4{
+        font-size: 2vh;
+    }
+    .reviewtime {
+        font-size: 2.5vh;
+    }
+    .arrow img{
+        height:6vh;
+    }
+    .container1{
+        flex-direction:column;
+    }
+    .left-box{
+        height:auto;
+    }
+    .right-box{
+        height: auto;
+        width: auto;
     }
     .button4 {
         font-size: 2.1vh; 
