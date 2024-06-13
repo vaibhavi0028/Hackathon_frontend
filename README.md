@@ -1,7 +1,7 @@
 <div align='center'>
 
 <h1>Technica 2024 Hackathon Portal</h1>
-<p>I am excited to share a significant project I had the privilege of working on - developing the front-end of the hackathon portal for Technica 2024, a 48-hour hackathon conducted by the Indian Society for Technical Education. Working alongside a talented tech team, we utilized React.js and Axios to ensure a smooth user experience, tackling challenges that pushed me to innovate and grow in web development.💡👩‍💻</p>
+<p>This repository houses the front-end codebase for the Technica 2024 hackathon portal, a project developed for the Indian Society for Technical Education's 48-hour hackathon. Working alongside a talented tech team, we utilized React.js and Axios to ensure a smooth user experience, tackling challenges that pushed me to innovate and grow in web development.💡👩‍💻</p>
 
 <h4> <a href="https://hackportal.istevit.in/">View Website</a>  <span> · </span> <a href="https://github.com/vaibhavi0028/Hackathon_frontend/blob/main/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/vaibhavi0028/Hackathon_frontend/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/vaibhavi0028/Hackathon_frontend/issues"> Request Feature </a> 
 <br><br>
